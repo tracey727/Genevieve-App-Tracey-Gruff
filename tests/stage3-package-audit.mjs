@@ -1,0 +1,6 @@
+import fs from 'node:fs';
+const refs=['docs/reference/GENEVIEVE_Dog_Park_COMPLETE_MASTER_BLUEPRINT_2026-08-15_PART_1.md','docs/reference/GENEVIEVE_Dog_Park_COMPLETE_MASTER_BLUEPRINT_2026-08-15_PART_2.md','docs/reference/GENEVIEVE_Dog_Park_COMPLETE_MASTER_BLUEPRINT_2026-08-15_PART_3.md'];
+for(const f of ['docs/STAGE3_STRUCTURE.md','docs/MASTER_BLUEPRINT_COVERAGE.md','docs/audits/STAGE2_BASELINE_MANIFEST.sha256','docs/audits/STAGE3_BUILD_AUDIT_LOG.md',...refs,'docs/reference/GENEVIEVE_Dog_Park_COMPLETE_MASTER_BLUEPRINT_2026-08-15_MANIFEST.md','docs/reference/GENEVIEVE_Dog_Park_Master_Blueprint_Archive_Record_2026-08-16.txt','docs/reference/00_GENEVIEVE_Dog_Park_Linked_Master_Index.md','LINKED_STAGE1_STAGE2_STAGE3_README.md'])if(!fs.existsSync(f)||!fs.statSync(f).size)throw new Error(`missing/empty ${f}`);
+const joined=refs.map(f=>fs.readFileSync(f,'utf8')).join('\n');for(let i=1;i<=37;i++)if(!joined.includes(`## ${i}.`))throw new Error(`Master blueprint section ${i} missing from repository reference parts`);
+const c=fs.readFileSync('docs/MASTER_BLUEPRINT_COVERAGE.md','utf8');for(let i=0;i<=14;i++)if(!c.includes(`| ${i} |`))throw new Error(`Phase ${i} missing`);
+console.log('Stage 3 package audit PASS: durable references present, all master blueprint Sections 1–37 present, and master Phases 0–14 represented.');

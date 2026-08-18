@@ -1,3 +1,5 @@
+import { initStage3 } from './stage3.js';
+
 const screens = [...document.querySelectorAll('[data-screen]')];
 const navButtons = [...document.querySelectorAll('[data-screen-target]')];
 const screenContent = document.querySelector('#screen-content');
@@ -108,3 +110,6 @@ if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js').catch(() => {});
   });
 }
+
+
+initStage3();

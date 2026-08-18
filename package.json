@@ -1,15 +1,1 @@
-{
-  "name": "genevieve-app-tracey-gruff-stage2",
-  "version": "2.0.0-stage2",
-  "private": true,
-  "type": "module",
-  "engines": {
-    "node": "22.x"
-  },
-  "scripts": {
-    "test": "node tests/audit.mjs && node tests/stage2-audit.mjs"
-  },
-  "dependencies": {
-    "@neondatabase/serverless": "^1.0.0"
-  }
-}
+{"name":"genevieve-app-tracey-gruff-stage3","version":"3.0.0-stage3","private":true,"type":"module","engines":{"node":"22.x"},"scripts":{"test":"node tests/audit.mjs && node tests/stage2-audit.mjs && node tests/stage3-audit.mjs"},"dependencies":{"@neondatabase/serverless":"^1.0.0"}}
