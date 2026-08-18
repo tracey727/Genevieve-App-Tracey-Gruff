@@ -1,7 +1,9 @@
 {
-  "name": "genevieve-tracey-gruff-dog-park-live-v40",
-  "version": "40.0.0",
+  "name": "genevieve-app-tracey-gruff-stage1",
+  "version": "1.0.0-stage1",
   "private": true,
-  "description": "GENEVIEVE App Dog Parks live static deployment with embedded official GA header logo",
-  "type": "commonjs"
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": { "test": "node tests/audit.mjs" },
+  "dependencies": { "@neondatabase/serverless": "^1.0.0" }
 }
