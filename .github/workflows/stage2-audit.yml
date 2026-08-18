@@ -1,0 +1,29 @@
+name: Stage 2 Audit
+
+on:
+  push:
+    branches:
+      - stage2/user-experience-interface-20260818
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Use Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Run Stage 1 and Stage 2 audits
+        run: npm test
