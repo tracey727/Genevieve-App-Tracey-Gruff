@@ -28,11 +28,24 @@
 - Later-phase actions remain visibly gated.
 
 ## 3.5 Blueprint continuity — PASS
-- Complete 15 Aug master blueprint, 16 Aug archive record and linked master index included unchanged.
+- Complete 15 Aug master blueprint, 16 Aug archive record and linked master index included unchanged in the audited package, with repository-readable blueprint references maintained for staging continuity.
 - Stage 3 implementation structure + Phase 0–14 coverage map included.
+
+## 3.6 GitHub → Vercel Preview → Neon linkage — PASS
+- GitHub branch: `stage3/source-of-truth-20260818`.
+- Stage 3 source commit deployed: `7cd2ba61b10796bd6a3364ffb451b90e9409b915`.
+- Vercel project: `genevieve-app-tracey-gruff`.
+- Redeployed Preview: `dpl_3vAL2rSrSPdb5H3aB67pQLyLcCyk`.
+- Vercel state: READY.
+- Build completed successfully with no build errors.
+- Preview environment uses the isolated Stage 3 Neon branch connection.
+- Deployed UI reported `Neon foundation connected`.
+- Vercel runtime evidence: `GET /api/health` returned HTTP 200 on this exact deployment at 12:40:55 UTC (twice) and 12:42:14 UTC.
+- Main/Production were not moved by this verification step.
 
 ## Final package verification
 - Full Stage 1 → Stage 2 → Stage 3 audit rerun after reconstruction: PASS.
 - No `node_modules` included.
 - No embedded database connection string detected by package scan.
 - External `npm install` runtime-import verification was attempted in the sandbox, but dependency download exceeded the sandbox execution window. No partial dependency output was added to the candidate.
+- Stage 3 staging linkage is now verified end-to-end: GitHub → Vercel Preview → Neon.
