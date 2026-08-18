@@ -4,28 +4,29 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <meta name="theme-color" content="#1B4D2B" />
-  <meta name="description" content="GENEVIEVE App™ Dog Park Stage 1 structural foundation." />
+  <meta name="description" content="GENEVIEVE App™ Dog Park Stage 2 user experience and interface foundation." />
   <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="icon" href="/icon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="/styles.css" />
-  <title>GENEVIEVE App™ — Dog Park Stage 1</title>
+  <title>GENEVIEVE App™ — Dog Park Stage 2</title>
 </head>
 <body>
   <a class="skip-link" href="#screen-content">Skip to content</a>
+
   <div class="app-shell">
     <header class="brand-header">
-      <img src="/icon.svg" width="54" height="54" alt="GENEVIEVE tree and infinity roots emblem" />
+      <img src="/icon.svg" width="58" height="58" alt="GENEVIEVE tree and infinity roots emblem" />
       <div>
         <p class="eyebrow">GENEVIEVE App™</p>
         <h1>Safety from roots to every journey.</h1>
       </div>
-      <div class="stage-pill" aria-label="Current build stage">STAGE 1</div>
+      <div class="stage-pill" aria-label="Current build stage">STAGE 2 · UX/UI</div>
     </header>
 
     <section class="status-row" aria-label="System status">
-      <div><strong id="greeting">G’day</strong><span>First structure</span></div>
+      <div><strong id="greeting">G’day</strong><span>User experience & interface</span></div>
       <div><strong id="safety-state">UNKNOWN</strong><span>Live safety data not connected</span></div>
-      <div><strong id="freshness">Local structure</strong><span id="backend-status">Checking foundation…</span></div>
+      <div><strong id="freshness">Local structure</strong><span id="backend-status" aria-live="polite">Checking foundation…</span></div>
     </section>
 
     <div class="emergency-wrap">
@@ -41,75 +42,125 @@
       <section class="screen is-active" data-screen="today" aria-labelledby="today-title">
         <div class="screen-heading"><span>01</span><div><p>Core entry</p><h2 id="today-title">Today</h2></div></div>
         <label class="search-shell">Search Parks, Beaches, or Regions
-          <input type="search" placeholder="Stage 2 search integration" disabled />
+          <input type="search" placeholder="Search activation follows verified data integration" disabled />
         </label>
-        <article class="panel alert-panel"><div class="panel-title">Dynamic location alerts</div><p>No live regional feed is connected in Stage 1. Current conditions are <strong>unknown</strong>, not safe by default.</p></article>
+        <article class="panel alert-panel">
+          <div class="panel-title">Dynamic location alerts</div>
+          <p>No live regional feed is connected in Stage 2. Current conditions are <strong>unknown</strong>, not safe by default.</p>
+        </article>
         <div class="action-grid">
-          <button type="button" disabled>Check in <span>Stage 2</span></button>
-          <button type="button" class="secondary" data-open-screen="hazards">Report Hazard <span>Open structure</span></button>
+          <button type="button" disabled>Check in <span>Not active yet</span></button>
+          <button type="button" class="secondary" data-open-screen="hazards">Report Hazard <span>Open reporting structure</span></button>
         </div>
-        <p class="privacy-line">🔒 Anonymous/privacy controls are structural only until the Stage 2 data layer is verified.</p>
+        <p class="privacy-line">🔒 Anonymous/privacy controls remain structural until their data and permission layer is verified.</p>
       </section>
 
       <section class="screen" data-screen="journey" aria-labelledby="journey-title" hidden>
         <div class="screen-heading"><span>02</span><div><p>Crowd / marine intelligence</p><h2 id="journey-title">Journey & Status</h2></div></div>
-        <article class="panel"><div class="panel-title">Selected location</div><p>Location selection and council verification are not connected yet.</p><div class="chips"><span>🌊 Tides: unknown</span><span>💧 Water: unknown</span><span>☀️ Heat: unknown</span></div></article>
-        <article class="panel"><div class="panel-title">On-site balance</div><div class="metric-grid"><div><strong>—</strong><span>Calm & Chill</span></div><div><strong>—</strong><span>Playful & Social</span></div><div><strong>—</strong><span>Zoomies</span></div></div><p class="microcopy">Live occupancy is not connected in Stage 1.</p></article>
+        <article class="panel">
+          <div class="panel-title">Selected location</div>
+          <p>Location selection and council verification are not connected yet.</p>
+          <div class="chips"><span>🌊 Tides: unknown</span><span>💧 Water: unknown</span><span>☀️ Heat: unknown</span></div>
+        </article>
+        <article class="panel">
+          <div class="panel-title">On-site balance</div>
+          <div class="metric-grid"><div><strong>—</strong><span>Calm & Chill</span></div><div><strong>—</strong><span>Playful & Social</span></div><div><strong>—</strong><span>Zoomies</span></div></div>
+          <p class="microcopy">Live occupancy is not connected in Stage 2.</p>
+        </article>
         <article class="panel"><div class="panel-title">Community hazard feed</div><p>No live reports are being broadcast from this build.</p></article>
-        <div class="action-grid"><button disabled>Check in <span>Stage 2</span></button><button disabled class="amber">Off Their Game <span>Stage 2</span></button></div>
+        <div class="action-grid"><button disabled>Check in <span>Not active yet</span></button><button disabled class="amber">Off Their Game <span>Not active yet</span></button></div>
         <button class="text-link" type="button" data-open-screen="travel">Find Nearest Safe Rest Stop / Vet →</button>
       </section>
 
       <section class="screen" data-screen="dog" aria-labelledby="dog-title" hidden>
         <div class="screen-heading"><span>03</span><div><p>Identity & behavioural baseline</p><h2 id="dog-title">Create Your Mate’s Profile</h2></div></div>
-        <div class="form-shell"><label>Dog name<input type="text" placeholder="Stage 2 secure persistence" disabled /></label><label>Breed<input type="text" placeholder="Offline breed index — Stage 2" disabled /></label><fieldset disabled><legend>Size category</legend><div class="segmented"><label><input type="radio" name="size" /> Small</label><label><input type="radio" name="size" /> Medium</label><label><input type="radio" name="size" /> Large</label></div></fieldset><fieldset disabled><legend>Energy baseline</legend><div class="chips"><span>🟢 Calm & Chill</span><span>🔵 Playful & Social</span><span>⚡ High Energy / Zoomies</span></div></fieldset><div class="chips"><span>🦮 In Training</span><span>🤫 Prefers Space</span></div></div>
-        <button disabled>Save Profile <span>Stage 2 secure storage</span></button>
-        <p class="privacy-line">No profile information is sent or saved by this Stage 1 shell.</p>
+        <div class="form-shell">
+          <label>Dog name<input type="text" placeholder="Secure profile storage not active yet" disabled /></label>
+          <label>Breed<input type="text" placeholder="Breed index not active yet" disabled /></label>
+          <fieldset disabled><legend>Size category</legend><div class="segmented"><label><input type="radio" name="size" /> Small</label><label><input type="radio" name="size" /> Medium</label><label><input type="radio" name="size" /> Large</label></div></fieldset>
+          <fieldset disabled><legend>Energy baseline</legend><div class="chips"><span>🟢 Calm & Chill</span><span>🔵 Playful & Social</span><span>⚡ High Energy / Zoomies</span></div></fieldset>
+          <div class="chips"><span>🦮 In Training</span><span>🤫 Prefers Space</span></div>
+        </div>
+        <button disabled>Save Profile <span>Secure persistence not active yet</span></button>
+        <p class="privacy-line">No profile information is sent or saved by this Stage 2 interface build.</p>
       </section>
 
       <section class="screen" data-screen="handler" aria-labelledby="handler-title" hidden>
         <div class="screen-heading"><span>04</span><div><p>Human command deck</p><h2 id="handler-title">Handler Profile & Security</h2></div></div>
-        <div class="form-shell"><label>Name<input disabled placeholder="Stage 2" /></label><label>Email<input disabled placeholder="Stage 2" /></label><label>Phone<input disabled placeholder="Stage 2" /></label><label>Emergency contact<input disabled placeholder="Stage 2" /></label><label>Private medical notes<textarea disabled placeholder="Secure storage required before activation"></textarea></label></div>
-        <article class="panel"><div class="panel-title">Visibility shields</div><div class="chips"><span>🔒 Ghost Mode</span><span>👥 Pack Only</span><span>🌐 Public Fuzzy Sync</span></div><p>Controls are displayed for structure only; no presence telemetry is transmitted.</p></article>
-        <button disabled>Save Profile & Shields <span>Stage 2</span></button>
+        <div class="form-shell">
+          <label>Name<input disabled placeholder="Secure storage not active yet" /></label>
+          <label>Email<input disabled placeholder="Secure storage not active yet" /></label>
+          <label>Phone<input disabled placeholder="Secure storage not active yet" /></label>
+          <label>Emergency contact<input disabled placeholder="Secure storage not active yet" /></label>
+          <label>Private medical notes<textarea disabled placeholder="Secure storage required before activation"></textarea></label>
+        </div>
+        <article class="panel">
+          <div class="panel-title">Visibility shields</div>
+          <div class="chips"><span>🔒 Ghost Mode</span><span>👥 Pack Only</span><span>🌐 Public Fuzzy Sync</span></div>
+          <p>Controls are displayed for structure only; no presence telemetry is transmitted.</p>
+        </article>
+        <button disabled>Save Profile & Shields <span>Secure persistence not active yet</span></button>
       </section>
 
       <section class="screen" data-screen="emergency" aria-labelledby="emergency-title" hidden>
         <div class="screen-heading"><span>05</span><div><p>Human & canine crisis portal</p><h2 id="emergency-title">Emergency Assistance Overlay</h2></div></div>
-        <article class="panel danger-panel"><div class="panel-title">Emergency boundary</div><p>This app has <strong>not</strong> transmitted your location, dispatched responders, or confirmed that help is coming.</p></article>
-        <div class="emergency-sections"><article class="panel"><div class="panel-title">For the Mate</div><button disabled>Animal poisons contact <span>Verify in Stage 2</span></button><button disabled>Closest emergency vet <span>Stage 2 routing</span></button><button disabled>Local ranger / pound <span>Stage 2</span></button></article><article class="panel"><div class="panel-title">For the Handler</div><a class="button-link danger" href="tel:000">Call 000 Emergency Services</a><button disabled>Personal ICE contact <span>Stage 2</span></button><button disabled>Closest hospital / clinic <span>Stage 2 routing</span></button></article></div>
+        <article class="panel danger-panel">
+          <div class="panel-title">Emergency boundary</div>
+          <p>This app has <strong>not</strong> transmitted your location, dispatched responders, or confirmed that help is coming.</p>
+        </article>
+        <div class="emergency-sections">
+          <article class="panel">
+            <div class="panel-title">For the Mate</div>
+            <button disabled>Animal poisons contact <span>Verification required before activation</span></button>
+            <button disabled>Closest emergency vet <span>Verified routing not active yet</span></button>
+            <button disabled>Local ranger / pound <span>Verified contact routing not active yet</span></button>
+          </article>
+          <article class="panel">
+            <div class="panel-title">For the Handler</div>
+            <a class="button-link danger" href="tel:000">Call 000 Emergency Services</a>
+            <button disabled>Personal ICE contact <span>Secure contact storage not active yet</span></button>
+            <button disabled>Closest hospital / clinic <span>Verified routing not active yet</span></button>
+          </article>
+        </div>
         <button class="secondary" type="button" data-open-screen="today">Cancel and Return to Today</button>
       </section>
 
       <section class="screen" data-screen="hazards" aria-labelledby="hazards-title" hidden>
         <div class="screen-heading"><span>06</span><div><p>Threat registry form</p><h2 id="hazards-title">Report a Local Hazard or Wildlife Sighting</h2></div></div>
         <div class="threat-grid" aria-label="Hazard categories"><button disabled>🐍 Snake / Wildlife</button><button disabled>🚧 Council / Infrastructure</button><button disabled>🧪 Baiting / Poison Threat</button><button disabled>⚠️ Altercation / Incident</button></div>
-        <article class="panel"><div class="panel-title">Incident location</div><p>Foreground location capture is not active in Stage 1. No coordinates are collected.</p></article>
-        <button disabled>Broadcast Hazard Alert <span>Stage 2 moderation + verification</span></button>
-        <p class="privacy-line">No report is published by this structural build.</p>
+        <article class="panel"><div class="panel-title">Incident location</div><p>Foreground location capture is not active in Stage 2. No coordinates are collected.</p></article>
+        <button disabled>Broadcast Hazard Alert <span>Moderation and verification required first</span></button>
+        <p class="privacy-line">No report is published by this Stage 2 interface build.</p>
       </section>
 
       <section class="screen" data-screen="travel" aria-labelledby="travel-title" hidden>
         <div class="screen-heading"><span>07</span><div><p>Long-distance navigation</p><h2 id="travel-title">Grey Nomad Highway & Veterinary Router</h2></div></div>
-        <div class="form-shell"><label>From<input disabled placeholder="Current location — Stage 2" /></label><label>To<input disabled placeholder="Town, suburb or destination — Stage 2" /></label></div>
-        <article class="panel"><div class="panel-title">Highway safe haven</div><p>Dog-friendly rest-stop routing is not connected yet.</p></article><article class="panel"><div class="panel-title">Emergency veterinarian</div><p>Verified veterinary routing is not connected yet.</p></article><article class="panel alert-panel"><div class="panel-title">Regional health alert</div><p>Live regional health data is unknown in Stage 1.</p></article>
-        <button disabled>Start Safe Travel Route <span>Stage 2</span></button>
+        <div class="form-shell"><label>From<input disabled placeholder="Location integration not active yet" /></label><label>To<input disabled placeholder="Destination search not active yet" /></label></div>
+        <article class="panel"><div class="panel-title">Highway safe haven</div><p>Dog-friendly rest-stop routing is not connected yet.</p></article>
+        <article class="panel"><div class="panel-title">Emergency veterinarian</div><p>Verified veterinary routing is not connected yet.</p></article>
+        <article class="panel alert-panel"><div class="panel-title">Regional health alert</div><p>Live regional health data is unknown in Stage 2.</p></article>
+        <button disabled>Start Safe Travel Route <span>Verified routing not active yet</span></button>
       </section>
 
       <section class="screen" data-screen="supervision" aria-labelledby="supervision-title" hidden>
         <div class="screen-heading"><span>08</span><div><p>On-site fenceline safety</p><h2 id="supervision-title">Active Supervision & Boundary Guard</h2></div></div>
-        <article class="panel"><div class="panel-title">Fenceline proximity</div><div class="unknown-state">UNKNOWN — GPS boundary monitoring is not active.</div></article><article class="panel"><div class="panel-title">Real-time crowd mix</div><div class="metric-grid"><div><strong>—</strong><span>Calm</span></div><div><strong>—</strong><span>Playful</span></div><div><strong>—</strong><span>Zoomies</span></div></div></article><article class="panel"><div class="panel-title">Deadman checkout safeguard</div><p>Structure reserved; no background tracking is active in Stage 1.</p></article>
-        <div class="action-grid"><button disabled>Stop Supervision <span>Stage 2</span></button><button class="secondary" type="button" data-open-screen="hazards">Log Incident <span>Open structure</span></button></div>
+        <article class="panel"><div class="panel-title">Fenceline proximity</div><div class="unknown-state">UNKNOWN — GPS boundary monitoring is not active.</div></article>
+        <article class="panel"><div class="panel-title">Real-time crowd mix</div><div class="metric-grid"><div><strong>—</strong><span>Calm</span></div><div><strong>—</strong><span>Playful</span></div><div><strong>—</strong><span>Zoomies</span></div></div></article>
+        <article class="panel"><div class="panel-title">Deadman checkout safeguard</div><p>Structure reserved; no background tracking is active in Stage 2.</p></article>
+        <div class="action-grid"><button disabled>Stop Supervision <span>Monitoring not active yet</span></button><button class="secondary" type="button" data-open-screen="hazards">Log Incident <span>Open reporting structure</span></button></div>
       </section>
 
       <section class="screen" data-screen="community" aria-labelledby="community-title" hidden>
         <div class="screen-heading"><span>09</span><div><p>Governance layer</p><h2 id="community-title">Community Code of Conduct & Etiquette</h2></div></div>
-        <article class="panel"><div class="panel-title">Golden Rules Charter</div><ol><li>Check current verified conditions before entering a park.</li><li>Respect dogs needing space and their handlers.</li><li>Supervise directly, clean up, and check gates latch.</li></ol></article><div class="action-grid"><button disabled>Report Community Misconduct <span>Stage 2</span></button><button disabled class="secondary">Open Digital Exchange Card <span>Stage 2</span></button></div><button disabled>Agree to App Code of Conduct <span>Stage 2 account persistence</span></button><p class="privacy-line">Breed bullying, harassment and malicious reporting are outside acceptable community conduct.</p>
+        <article class="panel"><div class="panel-title">Golden Rules Charter</div><ol><li>Check current verified conditions before entering a park.</li><li>Respect dogs needing space and their handlers.</li><li>Supervise directly, clean up, and check gates latch.</li></ol></article>
+        <div class="action-grid"><button disabled>Report Community Misconduct <span>Moderation workflow not active yet</span></button><button disabled class="secondary">Open Digital Exchange Card <span>Secure exchange not active yet</span></button></div>
+        <button disabled>Agree to App Code of Conduct <span>Account persistence not active yet</span></button>
+        <p class="privacy-line">Breed bullying, harassment and malicious reporting are outside acceptable community conduct.</p>
       </section>
     </main>
 
     <nav class="bottom-nav" aria-label="Primary screens">
-      <button class="is-current" data-screen-target="today" aria-label="Today"><span>⌂</span><small>Today</small></button>
+      <button class="is-current" data-screen-target="today" aria-label="Today" aria-current="page"><span>⌂</span><small>Today</small></button>
       <button data-screen-target="journey" aria-label="Journey"><span>◉</span><small>Journey</small></button>
       <button data-screen-target="dog" aria-label="Dog profile"><span>🐾</span><small>Mate</small></button>
       <button data-screen-target="handler" aria-label="Handler profile"><span>♙</span><small>Handler</small></button>
@@ -118,7 +169,14 @@
   </div>
 
   <dialog id="emergency-dialog" class="emergency-dialog" aria-labelledby="dialog-title">
-    <div class="dialog-card"><p class="eyebrow">Protected emergency shell</p><h2 id="dialog-title">Emergency assistance</h2><p>Opening this panel has not sent your location and has not dispatched help.</p><a class="button-link danger" href="tel:000">Call 000</a><button type="button" data-emergency-screen>Open Emergency Screen</button><button id="close-emergency" class="secondary" type="button">Cancel</button></div>
+    <div class="dialog-card">
+      <p class="eyebrow">Protected emergency shell</p>
+      <h2 id="dialog-title">Emergency assistance</h2>
+      <p>Opening this panel has not sent your location and has not dispatched help.</p>
+      <a class="button-link danger" href="tel:000">Call 000</a>
+      <button type="button" data-emergency-screen>Open Emergency Screen</button>
+      <button id="close-emergency" class="secondary" type="button">Cancel</button>
+    </div>
   </dialog>
 
   <script type="module" src="/app.js"></script>

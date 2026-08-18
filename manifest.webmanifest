@@ -1,10 +1,17 @@
 {
-  "name": "GENEVIEVE App™ — Dog Park Stage 1",
+  "name": "GENEVIEVE App™ — Dog Park Stage 2",
   "short_name": "GENEVIEVE",
-  "description": "Stage 1 structural foundation for the GENEVIEVE App™ Dog Park experience.",
+  "description": "Stage 2 user experience and interface foundation for the GENEVIEVE App™ Dog Park experience.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#eef6f1",
+  "background_color": "#f3f8f4",
   "theme_color": "#1B4D2B",
-  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
 }
