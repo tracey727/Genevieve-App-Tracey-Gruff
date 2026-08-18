@@ -1,13 +1,13 @@
 {
-  "name": "genevieve-app-tracey-gruff-stage1",
-  "version": "1.0.0-stage1",
+  "name": "genevieve-app-tracey-gruff-stage2",
+  "version": "2.0.0-stage2",
   "private": true,
   "type": "module",
   "engines": {
     "node": "22.x"
   },
   "scripts": {
-    "test": "node tests/audit.mjs"
+    "test": "node tests/audit.mjs && node tests/stage2-audit.mjs"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.0"
