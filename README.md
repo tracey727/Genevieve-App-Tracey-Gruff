@@ -1,3 +1,5 @@
+> **HISTORICAL STAGED PRECURSOR — DO NOT DEPLOY AS THE CURRENT DOG PARK APP.** This repository preserves the earlier Stage 1–3 Gruff/Dog Park build lineage and unique blueprint/audit material. Current Dog Park development lives in `tracey727/Genevieve-Tracey-Gruff-dog-park-app`; the Animal Sense family index is `tracey727/Genevieve-Animals-Dog-Parks-App`. The old branches are intentionally retained because they contain unique staged source/history not duplicated byte-for-byte in the current canonical repository. Vercel references here are historical only and must not be reintroduced into the canonical GitHub + Cloudflare + Neon build.
+
 # GENEVIEVE App™ — Tracey & Gruff Dog Park — Stage 1
 
 Clean Stage 1 structural deployment for the nine-screen GENEVIEVE App™ Dog Park shell.
